@@ -33,5 +33,11 @@ public class StudyController {
 	@RequestMapping("/study/studyRoom")
 	public String studyRoom() {
 		return "/study/studyRoom";
+	}	
+	@RequestMapping("/study/roomTime")
+	public String roomTime() {
+		return "/study/roomTime";
 	}
+	
+	
 }

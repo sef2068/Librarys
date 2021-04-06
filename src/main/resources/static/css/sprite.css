@@ -1,0 +1,281 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-right-gray {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -183px -61px;
+    width: 5px;
+    height: 9px;
+}
+.icon-arrow-right-white {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -189px -50px;
+    width: 5px;
+    height: 10px;
+}
+.icon-arrow-right {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -183px -50px;
+    width: 5px;
+    height: 10px;
+}
+.icon-booking-arrow {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -70px -115px;
+    width: 16px;
+    height: 9px;
+}
+.icon-booking-minus {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px -143px;
+    width: 14px;
+    height: 2px;
+}
+.icon-booking-plus {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -52px -150px;
+    width: 14px;
+    height: 14px;
+}
+.icon-booth-minus {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -41px -53px;
+    width: 40px;
+    height: 40px;
+}
+.icon-booth-plus {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: 0px -53px;
+    width: 40px;
+    height: 40px;
+}
+.icon-branch-search {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: 0px 0px;
+    width: 140px;
+    height: 52px;
+}
+.icon-btn_loc_map {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -141px -50px;
+    width: 24px;
+    height: 24px;
+}
+.icon-btn_loc_map_on {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -141px -75px;
+    width: 24px;
+    height: 24px;
+}
+.icon-bx_arrow_left {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -119px -53px;
+    width: 16px;
+    height: 27px;
+}
+.icon-bx_arrow_right {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px 0px;
+    width: 16px;
+    height: 27px;
+}
+.icon-fax {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px -92px;
+    width: 16px;
+    height: 15px;
+}
+.icon-gnb-calendar {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -109px -127px;
+    width: 18px;
+    height: 18px;
+}
+.icon-gnb-time {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -89px -127px;
+    width: 19px;
+    height: 19px;
+}
+.icon-layer_close {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: 0px -127px;
+    width: 22px;
+    height: 22px;
+}
+.icon-layer_close_black {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px -108px;
+    width: 16px;
+    height: 15px;
+}
+.icon-like-on {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: 0px -94px;
+    width: 36px;
+    height: 32px;
+}
+.icon-like-s-on {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -115px -94px;
+    width: 22px;
+    height: 20px;
+}
+.icon-like-s {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -46px -127px;
+    width: 22px;
+    height: 20px;
+}
+.icon-like {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -82px -53px;
+    width: 36px;
+    height: 32px;
+}
+.icon-loc_pop_down {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -141px -100px;
+    width: 24px;
+    height: 24px;
+}
+.icon-loc_pop_up {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -141px -25px;
+    width: 24px;
+    height: 24px;
+}
+.icon-location {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -183px 0px;
+    width: 12px;
+    height: 16px;
+}
+.icon-more_notice {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -183px -28px;
+    width: 10px;
+    height: 10px;
+}
+.icon-more_red {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -183px -17px;
+    width: 10px;
+    height: 10px;
+}
+.icon-more_red_close {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -183px -39px;
+    width: 10px;
+    height: 10px;
+}
+.icon-more_white {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -146px -127px;
+    width: 17px;
+    height: 17px;
+}
+.icon-phone {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -128px -127px;
+    width: 17px;
+    height: 18px;
+}
+.icon-pick {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -67px -150px;
+    width: 15px;
+    height: 13px;
+}
+.icon-question-mark {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px -51px;
+    width: 16px;
+    height: 16px;
+}
+.icon-red_person {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -23px -127px;
+    width: 22px;
+    height: 21px;
+}
+.icon-red_pos {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px -28px;
+    width: 16px;
+    height: 22px;
+}
+.icon-red_pos2 {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px -124px;
+    width: 13px;
+    height: 18px;
+}
+.icon-red_time {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -69px -127px;
+    width: 19px;
+    height: 20px;
+}
+.icon-share {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -37px -94px;
+    width: 32px;
+    height: 32px;
+}
+.icon-sns-facebook {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -166px -68px;
+    width: 11px;
+    height: 23px;
+}
+.icon-sns-instagram {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -141px 0px;
+    width: 24px;
+    height: 24px;
+}
+.icon-sns-naver {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -70px -94px;
+    width: 44px;
+    height: 20px;
+}
+.icon-sns-naver-blue {
+    background-image: url(../images/common/sprite/sns-naver-blue.png);
+    width: 44px;
+    height: 20px;
+}
+.icon-space {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: 0px -150px;
+    width: 17px;
+    height: 19px;
+}
+.icon-white-plus {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -18px -150px;
+    width: 17px;
+    height: 17px;
+}
+.icon-won {
+    background-image: url(../images/common/sprite/sprite.png);
+    background-position: -36px -150px;
+    width: 15px;
+    height: 15px;
+}
