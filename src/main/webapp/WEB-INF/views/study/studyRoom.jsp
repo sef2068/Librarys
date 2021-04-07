@@ -53,60 +53,80 @@
 				<li>이벤트</li>
 				<a href="/study/studyRoom"><li><span>스터디룸</span></li></a>
 			</ul>
+			
 		</div>
 	</nav>
 
 	<section>
 		<h1>스터디룸 예약</h1>
+		<a href="/study/mypageRoomService"><li><span>나의 스터디룸 예약현황 </span></li></a>
 		<div class="wrapper"></div>
 
 		<table>
 			<colgroup>
-				<col width="10%">
 				<col width="20px">
+				<col width="10%">
+				<col width="28px">
 				<col width="200px">
 				<col width="40px">
 			</colgroup>
 			<tr>
-				<th>룸 이름</th>
+				
 				<th>위치</th>
-				<th>룸 인원</th>
+				<th>룸 이름</th>
+				<th></th>
+				<th>당일 예약 현황</th>
 				<th>예약</th>
 			</tr>
 			<tr>
-				<th><img alt="참스테이크" src="../images/best01.jpg"></th>
 				<td><span class="table-notice">1층</span></td>
-				<th>4인</th>
-				<a href="/study/studyRoom">
-				<td><a href="/study/roomTime"><span class="table-notice">예약하기</span></a></td>
+				<td><img alt="" src="../images/best01.jpg"></td>
+				<td>오늘날짜 출력</td>
+				<td>
+				09:00 - 10:00 (예약중)<br>
+				10:00 - 11:00 (예약중)<br>
+				11:00 - 12:00 (예약중)<br>
+				12:00 - 13:00 ( 예약가능 )<br>
+				13:00 - 14:00 (예약중)<br>
+				14:00 - 15:00 (예약중)<br>
+				15:00 - 16:00 (예약중)<br>
+				16:00 - 17:00 (예약중)<br>
+				17:00 - 18:00 (예약중)<br>
+				18:00 - 19:00 (예약중)
+				</td>
+				<td><a href="/study/roomTime"><span class="table-notice">다른 날 예약하기</span></a></td>
 				</a>
 			</tr>
 
 			<tr>
-				<th><img alt="참스테이크" src="../images/best02.jpg"></th>
 				<td><span class="table-notice">1층</span></td>
-				<th>4인</th>
-				<td><a href="/study/roomTime"><span class="table-notice">예약하기</span></a></td>
+				<td><img alt="" src="../images/best02.jpg"></td>
+				<td>오늘날짜 출력</td>
+				<td></td>
+				<td><a href="/study/roomTime"><span class="table-notice">다른 날 예약하기</span></a></td>
 			</tr>
 
 			<tr>
-				<th><img alt="참스테이크" src="../images/best03.jpg"></th>
 				<td><span class="table-notice">2층</span></td>
-				<th>4인</th>
-				<td><a href="/study/roomTime"><span class="table-notice">예약하기</span></a></td>
+				<td><img alt="" src="../images/best03.jpg"></td>
+				<td>오늘날짜 출력</td>
+				<td></td>
+				<td><a href="/study/roomTime"><span class="table-notice">다른 날 예약하기</span></a></td>
 			</tr>
 
 			<tr>
-				<th><img alt="참스테이크" src="../images/best04.jpg"></th>
 				<td><span class="table-notice">2층</span></td>
-				<th>4인</th>
-				<td><a href="/study/roomTime"><span class="table-notice">예약하기</span></a></td>
+				<td><img alt="" src="../images/best04.jpg"></td>
+				<td>오늘날짜 출력</td>
+				<td></th>
+				<td><a href="/study/roomTime"><span class="table-notice">다른 날 예약하기</span></a></td>
 			</tr>
 			<tr>
-				<th><img alt="참스테이크" src="../images/best05.jpg"></th>
 				<td><span class="table-notice">2층</span></td>
-				<th>4인</th>
-				<td><a href="/study/roomTime"><span class="table-notice">예약하기</span></a></td>
+				<td><img alt="" src="../images/best05.jpg"></td>
+				<td>오늘날짜 출력</td>
+				<td></td>
+				<td><a href="/study/roomTime"><span class="table-notice">다른 날 예약하기</span></a></td>
 			</tr>
 
 		</table>

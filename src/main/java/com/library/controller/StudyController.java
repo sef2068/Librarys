@@ -20,12 +20,7 @@ public class StudyController {
 //	@Autowired
 //	StudyService studyService;
 //	Map<String,Object> map;
-	
-	
-//	@RequestMapping("/ㅡㅡㅡㅡ")
-//	public String ㅡㅡㅡㅡ() throws Exception {
-// 		return;
-//	}
+
 	@RequestMapping("/main")
 	public String main() {
 		return "main";
@@ -37,6 +32,10 @@ public class StudyController {
 	@RequestMapping("/study/roomTime")
 	public String roomTime() {
 		return "/study/roomTime";
+	}
+	@RequestMapping("/study/mypageRoomService")
+	public String mypageRoomService() {
+		return "/study/mypageRoomService";
 	}
 	
 	

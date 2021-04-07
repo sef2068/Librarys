@@ -109,11 +109,17 @@ td {
 }
 
 
-th,
-td {
+th
+{
   border-left: hidden;
   border-right: hidden;
 }
+td {
+  border-left: hidden;
+  border-right: hidden;
+  line-height:25px;
+}
+
 
 .page-num {
   margin-top: 15px;
