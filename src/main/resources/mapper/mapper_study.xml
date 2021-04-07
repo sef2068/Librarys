@@ -6,7 +6,7 @@
 <mapper namespace="com.library.mapper.StudyMapper">
 
 	<!-- 스터디룸 예약등록 -->
-	<insert id="insertRoomService"><![CDATA[
+	<insert id="insertroomService"><![CDATA[
         insert into RoomService values(
 		rs_seq.nextval,#{SR_Id},#{RS_Date},#{RS_Time},#{RS_Minute},#{LM_Id},#{RS_Info})
 ]]></insert>

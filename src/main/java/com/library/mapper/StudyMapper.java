@@ -1,8 +1,9 @@
 package com.library.mapper;
 
-//import org.apache.ibatis.annotations.Mapper;
-//
-//@Mapper
-public class StudyMapper {
+import com.library.dto.StudyDto;
+
+public interface StudyMapper {
+
+	void insertroomService(StudyDto studyDto);
 
 }
