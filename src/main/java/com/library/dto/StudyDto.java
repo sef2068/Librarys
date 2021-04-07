@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class StudyDto {
 	
-	private int SR_id;
-	private int SR_name;
-	private int SR_date1;
-	private int SR_date2;
-	private int SR_date3;
-	private int SR_userid;
-	private int SR_username;
+	private int RS_Id;
+	private int SR_Id;
+	private int RS_Date;
+	private int RS_Time;
+	private int RS_Minute;
+	private int LM_Id;
+	private int RS_Info;
 }

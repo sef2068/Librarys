@@ -61,10 +61,16 @@ body {
 			<option name="룸 선택" id="룸 선택" value="룸 03">룸 3
 			<option name="룸 선택" id="룸 선택" value="룸 04">룸 4
 			<option name="룸 선택" id="룸 선택" value="룸 05">룸 5
-		</select><br> <a id="a">날짜선택</a> <input type="text" name="대여날짜" id="대여날짜"
-			value="날짜 (yyyy-MM-dd)"><br> <a id="a">시간선택</a> <select
-			name=job>
+		</select><br> <a id="a">날짜선택</a> 
+		
+		<input type="text" name="대여날짜" id="대여날짜" value="날짜 (yyyy-MM-dd)"><br>
+		
+		<a id="a">시간선택</a> 
+		
+		
+		<select name=job>
 			<option value="" selected>선택하세요.
+			
 			<%
 			
 			int[] rs = {10,11,13,17};
@@ -72,7 +78,7 @@ body {
 			String dis_check="";
 			String dis_msg="";
 			
-			for(int i=9;i<=18;i++){ %><option value=i<%
+			for(int i=9;i<=18;i++){ %><option value=i id=i name=i<%
 				for(int j=0;j<rs.length;j++){
 					 if(i==rs[j]){
 					    dis_check ="disabled"; dis_msg="  [예약불가]";
@@ -82,15 +88,12 @@ body {
 					><%=i%>시<%=dis_msg%></option>
 					<%dis_check="";dis_msg="";}%>
 			
-			
-			
+	
+		</select><br>
 		
+		<input type="button" onclick="serviceCheck()" class=""value="예약하기">
+		<input type="button" onclick="goBack()"class="" value="스터디룸 다시선택">
 		
-			
-			
-		</select><br> <input type="button" onclick="serviceCheck()" class=""
-			value="예약하기"> <input type="button" onclick="goBack()"
-			class="" value="스터디룸 다시선택">
 	</form>
 
 </body>

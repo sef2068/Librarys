@@ -1,5 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-  <select id="" resultType="com.library.dto.StudyDto">
-        select * from  RoomService where ?=#{?}
-  </select>
+<mapper namespace="com.library.mapper.StudyMapper">
+
+	<!-- 스터디룸 예약등록 -->
+	<insert id="insertRoomService"><![CDATA[
+        insert into RoomService values(
+		rs_seq.nextval,#{SR_Id},#{RS_Date},#{RS_Time},#{RS_Minute},#{LM_Id},#{RS_Info})
+]]></insert>
+
+</mapper>
