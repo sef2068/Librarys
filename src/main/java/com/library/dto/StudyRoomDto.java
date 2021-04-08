@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StudyRoomDto {
+	//<!-- 4월 8일 -->
 	private int SR_Id;
 	private int SR_Name;
 	private int SR_Info;
