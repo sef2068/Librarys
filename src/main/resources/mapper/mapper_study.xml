@@ -6,6 +6,11 @@
 
 <mapper namespace="com.library.mapper.StudyMapper">
 
+	<!-- 스터디룸 예약 목록 불러오기 -->
+	<select id="roomBookingList" resultType="com.library.dto.RoomBookingDto"><![CDATA[
+		select * from roombooking
+]]></select>
+
 	<!-- 스터디룸 예약등록 -->
 	<insert id="insertroomService"><![CDATA[
         insert into RoomService values(

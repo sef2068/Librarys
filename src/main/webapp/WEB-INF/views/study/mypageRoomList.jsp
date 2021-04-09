@@ -54,17 +54,22 @@
         <th>예약 정보</th>
         <th>예약 취소</th>
       </tr>
+      
+  <c:forEach var="library" items="${list }">
       <tr>
-        <td><span class="table-notice">21-04-07</span></td>
-        <td class="table-title">[2층 햇살방] 09시-10시</td>
+        <td>${lis.RB_Date }</td>
+        <td class="table-title">${dto.RB_Time }</td>
         <td><span class="table-notice">예약취소</span></td>
       </tr>
+      </c:forEach>
       <tr>
         <td><span class="table-notice">N</span></td>
         <td class="table-title"></td>
         <td></td>
       </tr>
       
+      
+
     </table>
 
     <ul class="page-num">

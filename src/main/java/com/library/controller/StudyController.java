@@ -1,6 +1,7 @@
 package com.library.controller;
 
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.library.dto.StudyDto;
+import com.library.dto.RoomBookingDto;
 import com.library.service.study.StudyService;
 
 
@@ -24,13 +25,24 @@ public class StudyController {
 	@Autowired
 	StudyService studyService;
 	Map<String,Object> map;
+	ArrayList list = new ArrayList();
 	
-	@RequestMapping("/study/inroom")
-	public String write(StudyDto  studyDto) {
-		studyService.roomService(studyDto);
-		return "redirect:/study/mypageRoomService";
+	@RequestMapping("/study/mypageRoomList")
+	public String mypageRoomList(Model model) {
+		list = studyService.RoomBookingList();
+		System.out.println("date : "+list);
+		model.addAttribute("list",list);
+		
+		return "/study/mypageRoomList";
 	}
-
+	
+	@RequestMapping("/study/roomBooking")
+	public String roomBooking(RoomBookingDto studyDto) {
+		studyService.roomService(studyDto);
+		return "/study/mypageRoomList";
+	}
+	
+	
 	@RequestMapping("/main")
 	public String main() {
 		return "main";
@@ -42,11 +54,5 @@ public class StudyController {
 	@RequestMapping("/study/roomTime")
 	public String roomTime() {
 		return "/study/roomTime";
-	}
-	@RequestMapping("/study/mypageRoomService")
-	public String mypageRoomService() {
-		return "/study/mypageRoomService";
-	}
-	
-	
+	}	
 }

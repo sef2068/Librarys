@@ -7,13 +7,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class StudyDto {
-	//<!-- 4월 8일 -->
-	private int RS_Id;
+public class RoomBookingDto {
+	private int RB_Id;
 	private int SR_Id;
-	private int RS_Date;
-	private int RS_Time;
-	private int RS_Minute;
+	private String RB_Date;
+	private int RB_Time;
+	private int RB_Minute;
 	private int LM_Id;
-	private int RS_Info;
+	private String RB_Info;
 }

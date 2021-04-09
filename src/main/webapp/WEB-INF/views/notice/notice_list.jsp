@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- 4월 8일 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,62 +10,33 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/notice_list.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/notice_list.css">
 </head>
 <body>
   <header>
     <ul>
       <li>회원가입</li> <span>|</span>
       <li>로그인</li> <span>|</span>
-      <li>고객행복센터</li> <span>|</span>
-      <li>배송지역검색</li> <span>|</span>
-      <li>기프트카드 등록</li>
     </ul>
   </header>
 
   <nav>
     <div class="logo"></div>
-
-    <div id="search">
-      <div class="search"></div><br>
-      <span>메뉴찾기</span>
-    </div>
-
-    <div id="cart">
-      <div class="cart"></div><br>
-      <span>장바구니</span>
-    </div>
-
+    
     <div class="nav-menu">
       <ul>
-        <li>COOKIT소개</li>
-        <li>COOKIT 메뉴</li>
-        <li>리뷰</li>
-        <li>이벤트</li>
-        <li>MY쿡킷</li>
+        <li>도서관소개</li>
+        <li>공지사항</li>
+        <li>도서검색</li>
+        <li>스터디룸예약</li>
+        <li>이용안내</li>
       </ul>  
     </div>
   </nav>
 
   <section>
-    <h1>NOTICE</h1>
-    <div class="wrapper">
-      <form action="/search" name="search" method="post">
-        <select name="category" id="category">
-          <option value="0">전체</option>
-          <option value="title">제목</option>
-          <option value="content">내용</option>
-        </select>
-
-        <div class="title">
-          <input type="text" size="16">
-        </div>
-  
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-    </div>
-
+    <h1>공지사항</h1>
     <table>
       <colgroup>
         <col width="18%">
@@ -75,29 +50,16 @@
       </tr>
       <tr>
         <td><span class="table-notice">NOTICE</span></td>
-        <td class="table-title">신종코로나바이러스 예방관련 운영 안내</td>
-        <td>2020-02-28</td>
-      </tr>
-      <tr>
-        <td><span class="table-notice">NOTICE</span></td>
-        <td class="table-title">[2020년3월] 시설 정비 공사 안내</td>
-        <td>2020-02-28</td>
-      </tr>
-      <tr>
-        <td><span class="table-notice">NOTICE</span></td>
-        <td class="table-title">[키즈잼] 2020년 이용 시간 & 이용 요금 변경 안내</td>
-        <td>2019-12-11</td>
-      </tr>
-      <tr>
-        <td><span class="table-notice">NOTICE</span></td>
-        <td class="table-title">[키즈잼] 2020년 1분기 정기 휴관일 안내</td>
-        <td>2019-12-11</td>
-      </tr>
-      <tr>
-        <td><span class="table-notice">NOTICE</span></td>
         <td class="table-title">홈페이지 개인정보 보안 강화</td>
         <td>2018-11-14</td>
       </tr>
+        <c:forEach var="dto" items="${list}">
+      <tr>
+        <td><span class="table-notice">${dto.nt_num}</span></td>
+        <td class="table-title">${dto.nt_title }</td>
+        <td><span class="table-notice">${dto.nt_date }</span></td>
+      </tr>
+      </c:forEach>
       <tr>
         <td>5</td>
         <td class="table-title">[키즈잼] 3월 프로그램 안내</td>
@@ -134,8 +96,6 @@
       <li class="next"></li>
       <li class="last"></li>
     </ul>
-
-    <div class="write">쓰기</div>
   </section>
 
   <footer>

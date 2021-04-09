@@ -60,7 +60,7 @@
 
 	<section>
 		<h1>스터디룸 예약</h1>
-		<a href="/study/mypageRoomService"><li><span>나의 스터디룸 예약현황 </span></li></a>
+		<a href="/study/mypageRoomList"><li><span>나의 스터디룸 예약현황 </span></li></a>
 		<div class="wrapper"></div>
 
 		<table>
